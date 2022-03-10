@@ -1,0 +1,41 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-12">
+            <h1 style="text-align:center">Face Mask Detection: Project Description</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="container-fluid">
+        <div id="frame_container" class="row">
+        </div>
+        <hr>
+        <div class="row mb-2">
+            <p class="d-flex mx-auto lead text-danger"><strong>Project</strong></p>
+        </div>
+        <div class="row mb-2">
+            <p class="">
+                With the rise of SARS-CoV-19 (A.K.A COVID-19) the world seemed to fall apart with a lack of planning. The two things that seemed to have been mitigating factors in deaths were the vaccinations (along with the booster) and the use of facemasks. According to the Center for Disease Control and Prevention (CDC), the use of a respirator (such as an N95/K95), lowered the odds of testing positive for COVID-19 by 83%. With, the goal for our project was to create a web-application in which a Neural Network model is used in real-time through a webcam to detect whether someone is wearing a facemask. We are hopeful that this could attract a target audience of shopping centers and restaurants, where they use this model architecture at the entrance of the buildings, where you can accurately detect a lack of compliance in mitigating the risks of this pandemic.
+            </p>
+        </div>
+        <div class="row mb-2">
+            <p class="d-flex mx-auto lead text-danger"><strong>Model</strong></p>
+        </div>
+        <div class="row mb-2">
+            <p class="">
+                We used a MobileNet model from Keras and trained the convolutional neural network locally. We containarized the model and using flask, we then incorporated the deep learning model. Then, we used html/CSS to help improve the user interface of our website. Using Microsoft Azure, we deployed the webapp so as to allow anyone to use our website.
+            </p>
+        </div>
+
+        <div class="row mb-5">
+            <center><img src="/../static/images/intro.png" width="1100" alt="centered image" style="text-align:center"></center>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+{% block custom_js %}
+
+{% endblock %}

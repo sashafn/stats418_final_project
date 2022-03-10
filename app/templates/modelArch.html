@@ -1,0 +1,63 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-12">
+            <h1 style="text-align:center">Model Architecture</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="container-fluid">
+        <div id="frame_container" class="row">
+        </div>
+        <hr>
+        <div class="row mb-5">
+            <p class="d-flex mx-auto lead text-danger"><strong>Model Training and Testing Summary</strong></p>
+        </div>
+
+        <div class="row mb-5">
+            <p class="">
+                <strong>1.</strong> First, we split our data into the training set which will contain the images on which the CNN model will be trained and the test set with the images on which our model will be tested. 
+            </p>
+        </div>
+       
+        <div class="row mb-5">
+            <p class="">
+                <strong>2.</strong> We took test_size =0.2, which means that 80% of the total images will go to the training set and the remaining 20% of the images will go to the test set. Then we constructed the training image generator for data augmentation.
+            </p>
+        </div>
+
+        <div class="row mb-5">
+            <p class="">
+                <strong>3.</strong> Next, we built a neural network model using the MobileNets2 from TensorFlow with Keras library. 
+            </p>
+        </div>
+                
+        <div class="row mb-5">
+            <p class="">
+                <strong>4.</strong> For the model, we trained for 20 epochs (iterations). We see that at the end of 12th epoch, our model has an accuracy of 99.5% with the training set and an accuracy of 98.3% with the test set.
+            </p>
+        </div>
+
+        <div class="row mb-5">
+            <p class="d-flex mx-auto lead text-danger"><strong>Model Architecture</strong></p>
+        </div>
+
+         <div class="row mb-5">
+            <p class="">
+                <strong>MobileNets</strong> models are based on a streamlined architecture that uses depth-wise separable convolutions to build light weight deep neural networks MobileNetV2 is very similar to the original MobileNet, except that it uses inverted residual blocks with bottlenecking features.
+                It has a drastically lower parameter count than the original MobileNet. MobileNets support any input size greater than 32 x 32, with larger image sizes offering better performance.
+            </p>
+        </div>
+
+        <div class="row mb-5">
+            <center><img src="/../static/images/mobilenets.png" width="1100" alt="centered image" style="text-align:center"></center>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+{% block custom_js %}
+
+{% endblock %}

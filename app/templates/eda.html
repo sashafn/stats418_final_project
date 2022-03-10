@@ -1,0 +1,70 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-12">
+            <h1 style="text-align:center">EDA</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="container-fluid">
+        <div id="frame_container" class="row">
+        </div>
+        <hr>
+        <div class="row mb-5">
+            <p class="d-flex mx-auto lead text-danger"><strong>About ImageNet Data Set</strong></p>
+        </div>
+        <div class="row mb-5">
+            <p class="">
+                The ImageNet dataset contains 14,197,122 annotated images according to the WordNet hierarchy. Since 2010 the dataset is used in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC), a benchmark in image classification and object detection. The publicly released dataset contains a set of manually annotated training images. A set of test images is also released, with the manual annotations withheld. ILSVRC annotations fall into one of two categories: (1) image-level annotation of a binary label for the presence or absence of an object class in the image, e.g., “there are cars in this image” but “there are no tigers,” and (2) object-level annotation of a tight bounding box and class label around an object instance in the image, e.g., “there is a screwdriver centered at position (20,25) with width of 50 pixels and height of 30 pixels”. 
+            </p>
+        </div>
+
+        <div class="row mb-2">
+            <p class=""><strong>1.</strong> Total number of images: 14,197,122 </p>
+        </div>
+
+        <div class="row mb-2">
+            <p class=""><strong>2.</strong> Total number of non-empty WordNet synsets: 21,841 </p>
+        </div>
+
+        <div class="row mb-2">
+            <p class=""><strong>3.</strong> Number of images with bounding box annotations: 1,034,908 </p>
+        </div>
+
+        <div class="row mb-2">
+            <p class=""><strong>4.</strong> Number of synsets with SIFT features: 1000 </p>
+        </div>
+
+        <div class="row mb-2">
+            <p class=""><strong>5.</strong> Number of images with SIFT features: 1.2 million </p>
+        </div>
+
+        <div class="row mb-5">
+            <center><img src="/../static/images/imagenet.jpg" width="800"></center>
+        </div>
+
+        <div class="row mb-5">
+            <p class="d-flex mx-auto lead text-danger"><strong>Training and Testing Accuracy and Loss</strong></p>
+        </div>
+
+        <div class="row mb-5">
+            <center><img src="/../static/images/table.png" width="1000" alt="centered image" style="text-align:center"></center>
+        </div>
+
+        <div class="row mb-5">
+            <center><img src="/../static/images/traintestloss.png" width="1000" alt="centered image" style="text-align:center"></center>
+        </div>
+
+        <div class="row mb-5">
+            <p class="">
+            </p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+{% block custom_js %}
+
+{% endblock %}
